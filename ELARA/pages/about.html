@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About ELARA | Luxury Perfumes</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="../index.html" class="logo">ELARA</a>
+            </div>
+            
+            <ul class="nav__menu">
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Explore</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="category-him.html">For Him</a></li>
+                        <li><a href="category-her.html">For Her</a></li>
+                        <li><a href="category-unisex.html">Unisex</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ingredients.html">Craft</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav__icons">
+ <!-- Search Bar -->
+    <input type="text" class="searchInput" placeholder="Search perfumes..." onkeyup="filterPerfumes()">
+
+    <!-- Product Cards Container -->
+    <div id="productContainer"></div>                <a href="login.html" class="nav__icon">👤</a>
+                <a href="cart.html" class="nav__icon">🛒</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="category-hero">
+        <div class="category-hero__image">
+        <img src="../IMAGES/general/story" alt="Our Story">
+        <div class="category-hero__overlay"></div>
+        </div>
+        <div class="category-hero__content">
+            <h1 class="category-hero__title">Our Story</h1>
+            <p class="category-hero__subtitle">The Art of Memory in Every Bottle</p>
+        </div>
+    </section>
+
+    <section class="philosophy">
+        <div class="container">
+            <div class="philosophy__content">
+                <h2 class="philosophy__title">Where Scents Become Memories</h2>
+                <div class="philosophy__text">
+                    <p class="philosophy__quote">
+                        "ELARA was born from the belief that the most precious luxury is a moment worth remembering."
+                    </p>
+             <div>
+    <p>Founded in 2018, ELARA was built on a simple belief: fragrance is more than a scent — it is an experience.
+    Every perfume we create is designed to capture emotion, elevate presence, and leave a lasting impression.</p>
+    <p>With roots in traditional French perfumery and a passion for contemporary craftsmanship, ELARA blends high-quality ingredients,
+    modern techniques, and timeless elegance. Our mission is to make luxury feel personal and meaningful for every individual who
+    chooses our fragrances.</p>
+    <p>At ELARA, we don’t just create perfumes, we craft signature moments that stay with you.</p>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bestsellers" style="background: var(--light);">
+        <div class="container">
+            <h2 class="bestsellers__title">Our Values</h2>
+            <div class="bestsellers__grid">
+                <div class="product-card" style="text-align: center; background: white;">
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Quality</h3>
+                        <p class="product-card__desc">We source only the finest ingredients from sustainable growers around the world. Every component is rigorously tested for purity and potency.</p>
+                    </div>
+                </div>
+                <div class="product-card" style="text-align: center; background: white;">
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Transparency</h3>
+                        <p class="product-card__desc">We believe you should know exactly what you're wearing. Full ingredient disclosure is our standard, not an exception.</p>
+                    </div>
+                </div>
+                <div class="product-card" style="text-align: center; background: white;">
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Sustainability</h3>
+                        <p class="product-card__desc">From ethically sourced materials to eco-conscious packaging, we're committed to leaving a lighter footprint on our planet.</p>
+                    </div>
+                </div>
+                <div class="product-card" style="text-align: center; background: white;">
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Artistry</h3>
+                        <p class="product-card__desc">Each fragrance is a work of art, crafted with the precision of a scientist and the soul of a poet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3 class="footer__logo">ELARA</h3>
+                    <p class="footer__tagline">Where Scents Become Memories</p>
+                    <div class="footer__social">
+                        <a href="#" class="social__link">Instagram</a>
+                        <a href="#" class="social__link">Facebook</a>
+                        <a href="#" class="social__link">Pinterest</a>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Explore</h4>
+                        <ul class="footer__list">
+                            <li><a href="category-her.html">For Her</a></li>
+                            <li><a href="category-him.html">For Him</a></li>
+                            <li><a href="category-unisex.html">Unisex</a></li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Company</h4>
+                        <ul class="footer__list">
+                            <li><a href="about.html">Our Story</a></li>
+                            <li><a href="ingredients.html">Our Craft</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Support</h4>
+                        <ul class="footer__list">
+                            <li><a href="shipping.html">Shipping</a></li>
+                            <li><a href="returns.html">Returns</a></li>
+                            <li><a href="contact.html">Customer Care</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Contact</h4>
+                        <ul class="footer__list">
+                            <li>contact@elara.com</li>
+                            <li>+1 (555) 123-ELARA</li>
+                            <li>Mon-Fri: 9AM-6PM EST</li>
+                            <li>New York, NY</li>
+                        </ul>
+                        <!-- Map Locator -->
+                    <div class="footer-map" style="margin-top: 10px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24156.4181265733!2d-74.006015!3d40.712728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3161c77d7f%3A0x7eeb805f3be1f0e8!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1701166234567!5m2!1sen!2s"
+                            width="100%"
+                            height="200"
+                            style="border:0; border-radius: 8px;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2024 ELARA Luxury Perfumes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../JS/nav.js"></script>
+</body>
+</html>

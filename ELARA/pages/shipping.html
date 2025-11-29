@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shipping Policy | ELARA Luxury Perfumes</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="../index.html" class="logo">ELARA</a>
+            </div>
+            
+            <ul class="nav__menu">
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Explore</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="category-him.html">For Him</a></li>
+                        <li><a href="category-her.html">For Her</a></li>
+                        <li><a href="category-unisex.html">Unisex</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ingredients.html">Craft</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav__icons">
+ <!-- Search Bar -->
+    <input type="text" class="searchInput" placeholder="Search perfumes..." onkeyup="filterPerfumes()">
+
+    <!-- Product Cards Container -->
+    <div id="productContainer"></div>                <a href="login.html" class="nav__icon">👤</a>
+                <a href="cart.html" class="nav__icon">🛒</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="category-hero">
+        <div class="category-hero__image">
+            <img src="../IMAGES/general/shipping" alt="Our Craft">
+            <div class="category-hero__overlay"></div>
+        </div>
+        <div class="category-hero__content">
+            <h1 class="category-hero__title">Our Craft</h1>
+            <p class="category-hero__subtitle">The Art of Perfumery</p>
+        </div>
+    </section>
+<style>
+    /* Shipping Section */
+.shipping {
+    padding: 5rem 0;
+    background-color: #f9f9f9;
+}
+
+.shipping__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.shipping__card {
+    background-color: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shipping__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.shipping__icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #a67c52; /* Match ELARA gold accent */
+}
+
+.shipping__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.shipping__desc {
+    font-size: 1rem;
+    color: #555;
+}
+
+</style>
+
+<!-- Shipping Info Section -->
+<section class="shipping container">
+    <div class="shipping__grid">
+        <div class="shipping__card">
+            <div class="shipping__icon">🚚</div>
+            <h3 class="shipping__title">Fast Delivery</h3>
+            <p class="shipping__desc">Get your perfumes delivered quickly and safely to your doorstep.</p>
+        </div>
+        <div class="shipping__card">
+            <div class="shipping__icon">💳</div>
+            <h3 class="shipping__title">Secure Payment</h3>
+            <p class="shipping__desc">Multiple payment options with secure transactions guaranteed.</p>
+        </div>
+        <div class="shipping__card">
+            <div class="shipping__icon">🔄</div>
+            <h3 class="shipping__title">Easy Returns</h3>
+            <p class="shipping__desc">Hassle-free returns within 14 days for all products.</p>
+        </div>
+        <div class="shipping__card">
+            <div class="shipping__icon">📞</div>
+            <h3 class="shipping__title">24/7 Support</h3>
+            <p class="shipping__desc">Our customer support is available anytime to help you with your orders.</p>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3 class="footer__logo">ELARA</h3>
+                    <p class="footer__tagline">Where Scents Become Memories</p>
+                    <div class="footer__social">
+                        <a href="#" class="social__link">Instagram</a>
+                        <a href="#" class="social__link">Facebook</a>
+                        <a href="#" class="social__link">Pinterest</a>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Explore</h4>
+                        <ul class="footer__list">
+                            <li><a href="category-her.html">For Her</a></li>
+                            <li><a href="category-him.html">For Him</a></li>
+                            <li><a href="category-unisex.html">Unisex</a></li>
+                           
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Company</h4>
+                        <ul class="footer__list">
+                            <li><a href="about.html">Our Story</a></li>
+                            <li><a href="ingredients.html">Our Craft</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Support</h4>
+                        <ul class="footer__list">
+                            <li><a href="shipping.html">Shipping</a></li>
+                            <li><a href="returns.html">Returns</a></li>
+                            <li><a href="contact.html">Customer Care</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Contact</h4>
+                        <ul class="footer__list">
+                            <li>contact@elara.com</li>
+                            <li>+1 (555) 123-ELARA</li>
+                            <li>Mon-Fri: 9AM-6PM EST</li>
+                            <li>New York, NY</li>
+                        </ul>
+                        <!-- Map Locator -->
+                    <div class="footer-map" style="margin-top: 10px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24156.4181265733!2d-74.006015!3d40.712728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3161c77d7f%3A0x7eeb805f3be1f0e8!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1701166234567!5m2!1sen!2s"
+                            width="100%"
+                            height="200"
+                            style="border:0; border-radius: 8px;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 ELARA Luxury Perfumes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../JS/nav.js"></script>
+</body>
+</html>

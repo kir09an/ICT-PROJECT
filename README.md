@@ -41,4 +41,4 @@ Technologies Used
 
 Live Demo
 
-https://github.com/M25rub/ICT-PROJECT
+https://github.com/kir09an/ICT-PROJECT
